@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #ebfaff;
+}
+
+section{
+    width: 430px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0 ,0.1);
+}
+
+section nav.menu{
+    width: 100%;
+}
+section nav.menu a{
+    font-size: 20px;
+    color: #666;
+}
+section nav.menu a:nth-of-type(1) {
+    float: left;
+}
+section nav.menu a:nth-of-type(2) {
+    float: right;
+}
+section nav.menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section article.profile{
+    width: 100%;
+    text-align: center;
+}
+
+section article.profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    box-shadow: 5px 15px 30px rgba(170, 210, 230 ,0.8);
+}
+section article.profile h1{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #555;
+    margin-bottom: 5px;
+}
+
+section article.profile h2{
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    color:  #555;
+    margin-bottom: 5px;
+}
+
+section a.btnview{
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0 auto 20px;
+    background-color: #444;
+    border-radius: 15px;
+    font: bold 10px/1 "arial";
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    background:linear-gradient(45deg, #4affff, #35e0f7);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+section ul.contact{
+    margin-bottom: 25px;
+}
+section ul.contact li{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section ul.contact li:last-child{
+    border-bottom: none;
+}
+
+section ul.contact li i{
+    width: 20%;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #ddd;
+}
+
+section ul.contact li span{
+    font: normal 11px/1 "orbitron";
+    color: #555;
+}
+section nav.others{
+    width: 100%;
+    text-align: center;
+}
+section nav.others a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 10px;
+
+    /*  */
+    opacity:0.4;
+    filter: saturate(0.7);
+}
+section nav.others a.on{
+    opacity: 1;
+    filter: saturate(1);
+}
+section nav.others a:nth-of-type(1){
+    background-color: cyan;
+    box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.555);
+}
+section nav.others a:nth-of-type(2){
+    background-color: purple;
+    box-shadow: 5px 5px 10px rgba(255, 74, 255, 0.507);
+}
+section nav.others a:nth-of-type(3){
+    background-color: lightgreen;
+    box-shadow: 5px 5px 10px rgba(74, 255, 89, 0.582);
+}
+section nav.others a:nth-of-type(4){
+    background-color: pink;
+    box-shadow: 5px 5px 10px rgba(255, 74, 89, 0.418);
+}
+section nav.others a:nth-of-type(5){
+    background-color: darkcyan;
+    box-shadow: 5px 5px 10px rgba(74, 167, 255, 0.966);
+}
+section nav.others a:nth-of-type(6){
+    background-color: gray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+/* member1 */
+body.member1{
+    background-color: lightyellow;
+}
+body.member1 section article.profile img {
+    box-shadow: 5px 15px 30px rgba(173, 210, 230 ,0.8);
+}
+body.member1 section a.btnview{
+    background: linear-gradient(45deg, #ff8800,#b2be00);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+/* member2 */
+body.member2{
+    background-color: skyblue;
+}
+body.member2 section article.profile img {
+    box-shadow: 5px 15px 30px rgba(173, 210, 230 ,0.8);
+}
+body.member2 section a.btnview{
+    background: linear-gradient(45deg, #00cccc,#035880);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+/* member3 */
+body.member3{
+    background-color: lightcyan;
+}
+body.member3 section article.profile img {
+    box-shadow: 5px 15px 30px rgba(173, 210, 230 ,0.8);
+}
+body.member3 section a.btnview{
+    background: linear-gradient(45deg, #0059ff,#00218d);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+/* member4 */
+body.member4{
+    background-color: darkorchid;
+}
+body.member4 section article.profile img {
+    box-shadow: 5px 15px 30px rgba(173, 210, 230 ,0.8);
+}
+body.member4 section a.btnview{
+    background: linear-gradient(45deg, #eb00cc,#7a0133);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+/* member5 */
+body.member5{
+    background-color: darkolivegreen;
+}
+body.member5 section article.profile img {
+    box-shadow: 5px 15px 30px rgba(173, 210, 230 ,0.8);
+}
+body.member5 section a.btnview{
+    background: linear-gradient(45deg, #00b94d,#017250);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+/* member6 */
+body.member6{
+    background-color: gray;
+}
+body.member6 section article.profile img {
+    box-shadow: 5px 15px 30px rgba(173, 210, 230 ,0.8);
+}
+body.member6 section a.btnview{
+    background: linear-gradient(45deg, #017c7a,#314346);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.411);
+}
